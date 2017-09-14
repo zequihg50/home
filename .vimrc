@@ -1,3 +1,10 @@
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion'
+call plug#end()
+
 " Show current line number and relative number
 set nu
 set relativenumber
