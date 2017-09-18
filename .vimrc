@@ -28,6 +28,9 @@ nnoremap <C-H> <C-W><C-H>
 " Set , as leader
 let mapleader = ","
 
+" Change dir of .swp files
+set dir=/tmp
+
 " Ansible YAML
 autocmd FileType yaml setlocal shiftwidth=2
 autocmd FileType yaml setlocal tabstop=2
