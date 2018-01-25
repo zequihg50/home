@@ -63,3 +63,6 @@
 
 ;; Nord theme
 (load-theme 'nord t)
+
+;; ibuffer by default
+(defalias 'list-buffers 'ibuffer)
