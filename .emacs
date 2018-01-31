@@ -61,8 +61,8 @@
 ; ;; If there is more than one, they won't work right.
 ; )
 
-;; Nord theme
-(load-theme 'nord t)
+;; Ample theme
+(load-theme 'ample t)
 
 ;; ibuffer by default
 (defalias 'list-buffers 'ibuffer)
