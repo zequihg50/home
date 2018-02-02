@@ -61,8 +61,22 @@
 ; ;; If there is more than one, they won't work right.
 ; )
 
-;; Ample theme
-(load-theme 'ample t)
+;; Base16 theme
+(load-theme 'base16-solarized-dark t)
 
 ;; ibuffer by default
 (defalias 'list-buffers 'ibuffer)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (base16-theme yaml-mode polymode nord-theme markdown-mode evil ess ample-theme))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
