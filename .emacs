@@ -62,10 +62,15 @@
 ; )
 
 ;; Base16 theme
-(load-theme 'base16-solarized-dark t)
+(load-theme 'base16-monokai t)
 
 ;; ibuffer by default
 (defalias 'list-buffers 'ibuffer)
+
+;; load httpd.el
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(load "apache-mode.el")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -79,4 +84,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(font-lock-variable-name-face ((t (:foreground "green3")))))
