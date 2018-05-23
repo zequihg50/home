@@ -32,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'altercation/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
 Plug 'pearofducks/ansible-vim'
+Plug 'jalvesaq/Nvim-R'
 
 call plug#end()
 
