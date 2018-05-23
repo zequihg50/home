@@ -19,3 +19,8 @@ apt-get install fonts-inconsolata
 ./truecolortest.sh
 wget https://dl.suckless.org/st/st-0.8.1.tar.gz
 # http://brianbuccola.com/how-to-build-and-install-st-suckless-simple-terminal-from-source-on-arch-linux/
+
+## Install R and RStudio
+apt-get install openssl libssl-dev gfortran readline-common libreadline-dev xorg libx11-dev xorg-dev bzip2 libzip-dev libzip4 libbz2-dev liblzma liblzma5 liblzma-dev libpcre3 libpcre3-dev libcurl3 libcurl4-gnutls-dev texlive openjdk-8-jdk
+
+# instalar https://www.boost.org/ para compilar RStudio
