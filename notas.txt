@@ -1,0 +1,26 @@
+deb http://auto.mirror.devuan.org/merged/ ascii main
+deb-src http://auto.mirror.devuan.org/merged/ ascii main
+
+insert id:5:initdefault: in /etc/inittab
+apt-get install xdm i3 git patch build-essential libx11-dev libxft-dev fonts-hack-otf cmake libtool-bin m4 automake curl
+
+## Fonts
+# http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
+apt-get install fonts-inconsolata
+# in .Xresources: # NO - SEE NEXT (stterm)
+xterm*faceName: Inconsolata
+xterm*faceSize: 12
+xterm*renderFont: true
+
+# stterm
+apt-get install fonts-inconsolata
+# install stterm from source (in order to configure it using config.h)
+# edit .config/i3/config and change i3-sensible-default by stterm -f "inconsolata:size=13"
+./truecolortest.sh
+wget https://dl.suckless.org/st/st-0.8.1.tar.gz
+# http://brianbuccola.com/how-to-build-and-install-st-suckless-simple-terminal-from-source-on-arch-linux/
+
+## Install R and RStudio
+apt-get install openssl libssl-dev gfortran readline-common libreadline-dev xorg libx11-dev xorg-dev bzip2 libzip-dev libzip4 libbz2-dev liblzma liblzma5 liblzma-dev libpcre3 libpcre3-dev libcurl3 libcurl4-gnutls-dev texlive openjdk-8-jdk
+
+# instalar https://www.boost.org/ para compilar RStudio
