@@ -21,18 +21,13 @@ inoremap jj <Esc>
 
 " copy colors.vim in ~/.local/nvim/... first
 syntax enable
-"set background=dark
-"let g:solarized_termcolors=256
-"colorscheme solarized
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
 " List of plugins
-" Plug 'altercation/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
 Plug 'pearofducks/ansible-vim'
-Plug 'jalvesaq/Nvim-R'
 
 call plug#end()
 
