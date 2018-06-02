@@ -1,3 +1,4 @@
+* Devuan installation
 deb http://auto.mirror.devuan.org/merged/ ascii main
 deb-src http://auto.mirror.devuan.org/merged/ ascii main
 
@@ -21,6 +22,18 @@ wget https://dl.suckless.org/st/st-0.8.1.tar.gz
 # http://brianbuccola.com/how-to-build-and-install-st-suckless-simple-terminal-from-source-on-arch-linux/
 
 ## Install R and RStudio
-apt-get install openssl libssl-dev gfortran readline-common libreadline-dev xorg libx11-dev xorg-dev bzip2 libzip-dev libzip4 libbz2-dev liblzma liblzma5 liblzma-dev libpcre3 libpcre3-dev libcurl3 libcurl4-gnutls-dev texlive openjdk-8-jdk
+apt-get install openssl libssl-dev gfortran readline-common libreadline-dev xorg libx11-dev xorg-dev bzip2 libzip-dev libzip4 libbz2-dev liblzma liblzma5 liblzma-dev libpcre3 libpcre3-dev libcurl3 libcurl4-gnutls-dev openjdk-8-jdk libpam0g-dev texlive-fonts-extra texlive texinfo 
 
-# instalar https://www.boost.org/ para compilar RStudio
+# R
+./configure --enable-R-shlib && make && make install
+
+# RStudio
+## Usar .deb, imposible de compilar
+dpki -i rstudio.deb
+sudo apt-get install -f
+
+# pulseaudio and pavucontrol, I need to config volume in pavucontrol
+apt-get install pulseaudio pavucontrol
+
+* Statistics - hypothesis testing
+http://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests-significance-levels-alpha-and-p-values-in-statistics
