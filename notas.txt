@@ -3,7 +3,7 @@ deb http://auto.mirror.devuan.org/merged/ ascii main
 deb-src http://auto.mirror.devuan.org/merged/ ascii main
 
 insert id:5:initdefault: in /etc/inittab
-apt-get install xdm i3 git patch build-essential libx11-dev libxft-dev fonts-hack-otf cmake libtool-bin m4 automake curl
+apt-get install xdm i3 git patch build-essential libx11-dev libxft-dev fonts-hack-otf cmake libtool-bin m4 automake curl xfe
 
 ## Fonts
 # http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
@@ -34,6 +34,3 @@ sudo apt-get install -f
 
 # pulseaudio and pavucontrol, I need to config volume in pavucontrol
 apt-get install pulseaudio pavucontrol
-
-* Statistics - hypothesis testing
-http://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests-significance-levels-alpha-and-p-values-in-statistics
