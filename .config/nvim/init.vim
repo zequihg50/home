@@ -37,4 +37,6 @@ set background=dark
 colorscheme NeoSolarized
 
 " ansible-vim
+au BufRead,BufNewFile *.yml set ft=yaml.ansible
+au BufRead,BufNewFile *.xml.j2 set filetype=xml.jinja2
 let g:ansible_attribute_highlight = "ab"
