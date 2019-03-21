@@ -1,9 +1,9 @@
 (add-to-list 'default-frame-alist
-             '(font . "Inconsolata-11"))
+	     '(font . "Inconsolata-10"))
 
 (require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
-                    (not (gnutls-available-p))))
+		    (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
   ;; Comment/uncomment these two lines to enable/disable MELPA and MELPA Stable as desired
   (add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
@@ -39,3 +39,9 @@
 
 ;; Magit status
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Ansible yaml
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . ansible))
+
+;; Whitespace cleanup
+(add-hook 'before-save-hook 'whitespace-cleanup)
